@@ -9,6 +9,8 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
+
 export default {
     name:'SignUp',
     data(){
@@ -19,8 +21,14 @@ export default {
         }
     },
     methods:{
-        signup(){
-            console.warn("Signup",this.name,this.email,this.password);
+        async signup(){
+            //console.warn("Signup",this.name,this.email,this.password);
+            let r = await axios.post("http://localhost:3000/user",{
+                name:this.name,
+                email:this.email,
+                password:this.password,
+            });
+           console.warn(r); 
         }
     }
 }
