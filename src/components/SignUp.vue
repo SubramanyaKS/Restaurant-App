@@ -2,15 +2,27 @@
 <img class="logo" alt="Vue logo" src="../assets/logo1.jpg">
     <h1>SignUp</h1>
     <div class="register">
-        <input type="text" placeholder="Enter the Name:" />
-        <input type="text" placeholder="Enter the Email:" />
-        <input type="password" placeholder="Enter the Password:" />
-        <button class="btn">Sign Up</button>
+        <input type="text" v-model="name" placeholder="Enter the Name:" />
+        <input type="text" v-model="email" placeholder="Enter the Email:" />
+        <input type="password" v-model="password" placeholder="Enter the Password:" />
+        <button v-on:click="signup" class="btn">Sign Up</button>
     </div>
 </template>
 <script>
 export default {
-    name:'SignUp'
+    name:'SignUp',
+    data(){
+        return{
+            name:'',
+            email:'',
+            password:''
+        }
+    },
+    methods:{
+        signup(){
+            console.warn("Signup",this.name,this.email,this.password);
+        }
+    }
 }
 </script>
 <style >
