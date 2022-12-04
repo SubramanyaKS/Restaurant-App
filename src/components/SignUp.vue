@@ -23,12 +23,17 @@ export default {
     methods:{
         async signup(){
             //console.warn("Signup",this.name,this.email,this.password);
-            let r = await axios.post("http://localhost:3000/user",{
-                name:this.name,
-                email:this.email,
-                password:this.password,
-            });
+             let r = await axios.post("http://localhost:3000/user",{
+                 name:this.name,
+                 email:this.email,
+                 password:this.password
+             }).catch(error => console.log(error.response));
+            //let r= await axios.get("http://localhost:3000/user");
            console.warn(r); 
+           if(r.status==201){
+               console.log("Sign-Up done");
+               localStorage.setItem("user-info",r.data);
+            }
         }
     }
 }
