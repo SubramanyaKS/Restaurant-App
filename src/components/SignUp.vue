@@ -31,9 +31,16 @@ export default {
             //let r= await axios.get("http://localhost:3000/user");
            console.warn(r); 
            if(r.status==201){
-               console.log("Sign-Up done");
-               localStorage.setItem("user-info",r.data);
+              // console.log("Sign-Up done");
+               localStorage.setItem("user-info",JSON.stringify(r.data));
+               this.$router.push({name:'Home'});
             }
+        }
+    },
+    mounted(){
+        let users= localStorage.getItem('user-info');
+        if(users){
+             this.$router.push({name:'Home'});
         }
     }
 }
