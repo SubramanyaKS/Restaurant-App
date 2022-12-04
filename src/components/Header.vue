@@ -3,12 +3,20 @@
       <a href="#">Home</a>
       <a href="#">Add Restaurant</a>
       <a href="#">Update Restaurant</a>
-      <a href="#">LogOut</a>
+      <a v-on:click="logout" href="#">LogOut</a>
   </div>
 </template>
 <script>
 export default {
   name: "Header",
+  methods:{
+      logout(){
+          console.warn("logout");
+          localStorage.clear();
+          this.$router.push({name:'LogIn'})
+
+      }
+  }
 };
 </script>
 <style >
@@ -27,7 +35,7 @@ export default {
 }
 .nav a:hover{
     background-color: brown;
-    
+
 }
 
 </style>
