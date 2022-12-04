@@ -1,4 +1,4 @@
-# my-project
+# Restaurant Management App
 
 ## Project setup
 ```
