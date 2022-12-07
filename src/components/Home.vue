@@ -37,7 +37,8 @@ export default {
   async mounted() {
     let users = localStorage.getItem("user-info");
     this.name= JSON.parse(users).name;
-    if (!users) {
+    console.log(users)
+    if (users==null) {
       this.$router.push({ name: "SignUp" });
     }
     let r= await axios.get("http://localhost:3000/restuarant")
