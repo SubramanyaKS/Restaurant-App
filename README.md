@@ -29,3 +29,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## Credits
 
 [Code Step by Step](https://www.youtube.com/playlist?list=PL8p2I9GklV44m5tFH-zjCmTiHeq9GZrby)
+
+If you like this don't forget to ⭐ the repository.
+
+Thank You for visiting Have a nice day 😊
