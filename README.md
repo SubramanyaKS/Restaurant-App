@@ -2,6 +2,11 @@
 
 This is mini Vue app in which we can  add update delete the restuarant usin axios call.
 
+## Tech Stack
+
+* ![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+* ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+
 ## Project setup
 ```
 npm install
