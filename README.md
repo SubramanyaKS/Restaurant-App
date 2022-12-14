@@ -1,6 +1,6 @@
 # Restaurant Management App
 
-This is mini Vue app in which we can  add update delete the restuarant usin axios call.
+This is mini Vue JS app, which we can  add, update and delete the restuarant details using axios call.
 
 ## Tech Stack
 
